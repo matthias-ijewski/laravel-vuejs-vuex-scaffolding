@@ -50,9 +50,6 @@ Damit Änderungen in der Frontend .env wirksam werden, muss "npm run serve" been
 
 Passport OAuth-Client-Secret in Frontend .env eintragen\
 Passport OAuth-Client-ID in Frontend .env eintragen\
-npm install
+npm install\
 npm run serve
-
-### Konfiguration
-
 
