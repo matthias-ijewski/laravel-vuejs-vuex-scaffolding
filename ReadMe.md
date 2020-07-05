@@ -1,4 +1,4 @@
-# Laravel Backend & vue Frontend Scaffolding
+# Laravel Backend & Vue.js mit Vuex Frontend Scaffolding
 
 ## Aufgabenstellung
 Es soll eine API erstellt werden, die eine geeignete Authentifizierung für eine klassische Webapplikation, eine vue.js Webapplikation und mobile Apps gleichermaßen bereitstellt.
@@ -33,25 +33,26 @@ Datenbank erstellen\
 .env konfigurieren\
 npm install\
 composer install\
+QUEUE_CONNECTION=database in der Backend .env setzen
 php artisan migrate\
-Webserver starten\
+php artisan serve\
 Benutzer anlegen\
 Mit Benutzer einloggen\
 Passport OAuth-Client erzeugen\
-Passport OAuth-Client-Secret in Frontend .env eintragen\
-Passport OAuth-Client-ID in Frontend .env eintragen\
 Der OAuth-Client muss in der Datenbank-Tabelle oauth_clients als Passwort-Client registriert sein (password_client = 1)\
 (php artisan passport:install)\
 php artisan passport:keys\
 npm run dev\
-\
+
 Damit Änderungen in der Frontend .env wirksam werden, muss "npm run serve" beendet und neu gestartet werden\
 
 ### Frontend
 
-.env konfigurieren\
-npm install\
+Passport OAuth-Client-Secret in Frontend .env eintragen\
+Passport OAuth-Client-ID in Frontend .env eintragen\
+npm install
+npm run serve
 
 ### Konfiguration
-In der .env muss QUEUE_CONNECTION=database gesetzt werden
+
 
