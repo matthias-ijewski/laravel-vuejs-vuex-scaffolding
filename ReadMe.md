@@ -44,8 +44,6 @@ Der OAuth-Client muss in der Datenbank-Tabelle oauth_clients als Passwort-Client
 php artisan passport:keys\
 npm run dev\
 
-Damit Änderungen in der Frontend .env wirksam werden, muss "npm run serve" beendet und neu gestartet werden\
-
 ### Frontend
 
 Passport OAuth-Client-Secret in Frontend .env eintragen\
