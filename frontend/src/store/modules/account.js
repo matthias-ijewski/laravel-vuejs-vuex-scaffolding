@@ -133,7 +133,6 @@ export default {
                 })
                     .then(resp => {
                         const token = resp.data;
-                        debugger;
                         localStorage.setObj('token', token);
                         axios.defaults.headers.common['Authorization'] =
                             'Bearer ' + token.access_token;

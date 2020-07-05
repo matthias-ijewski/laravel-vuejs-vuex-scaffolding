@@ -110,7 +110,6 @@ export default {
                     err.config &&
                     !err.config.__isRetryRequest
                 ) {
-                    debugger;
                     this.$store.dispatch('account/logout');
                 }
                 throw err;
