@@ -14,7 +14,7 @@ Die erweiterte BearerTokenResponse reichert alle Antworten auf Token-Requests (l
 ## Features
  - vuex modules
  - auth with passport
- - vuejs signin form submit on enter
+ - vuejs signin form submit on key enter
  - vuejs routing with dialogs
  - vuejs full screen signin and signup forms using dialogs
  - protected private image routes
