@@ -33,7 +33,7 @@ Datenbank erstellen\
 .env konfigurieren\
 npm install\
 composer install\
-QUEUE_CONNECTION=database in der Backend .env setzen
+QUEUE_CONNECTION=database in der Backend .env setzen\
 php artisan migrate\
 php artisan serve\
 Benutzer anlegen\
