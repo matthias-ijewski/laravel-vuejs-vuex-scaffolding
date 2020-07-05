@@ -3,6 +3,7 @@
 namespace App\Http\Controllers\Api;
 
 use App\Http\Controllers\Controller;
+use App\Http\Requests\LoginRequest;
 use App\Http\Requests\RegisterRequest;
 use App\Http\Resources\UserResource;
 use App\User;
@@ -45,7 +46,7 @@ class AuthController extends Controller
      * @param Request $request
      * @return mixed
      */
-    protected function authenticate(Request $request)
+    protected function authenticate(LoginRequest $request)
     {
         $request->request->add([
             'grant_type' => 'password',
