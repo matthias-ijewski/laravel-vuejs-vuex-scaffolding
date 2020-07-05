@@ -25,6 +25,7 @@ Die erweiterte BearerTokenResponse reichert alle Antworten auf Token-Requests (l
  - database driven job queues
  - server & frontend side validation
  - multilanguage support with laravel-translatable
+ - vuejs my account page with avatar upload
 
 ## Installation
 
