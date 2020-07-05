@@ -1,0 +1,22 @@
+* {
+    border-radius: 0 !important;
+}
+// font-face {
+//     font-family: "Montserrat";
+//     src: url("fonts/Montserrat/Montserrat-Regular.ttf") format("truetype");
+// }
+
+// Fonts
+@import url("https://fonts.googleapis.com/css?family=Nunito");
+@import url("https://fonts.googleapis.com/css?family=Montserrat");
+
+// Variables
+@import "variables";
+//
+// bootstrap extension
+@import "bootstrap-extended/cards.scss";
+@import "laratime.scss";
+//
+
+// Bootstrap
+@import "~bootstrap/scss/bootstrap";
