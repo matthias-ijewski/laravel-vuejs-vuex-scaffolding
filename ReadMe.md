@@ -18,6 +18,7 @@ Die erweiterte BearerTokenResponse reichert alle Antworten auf Token-Requests (l
  - vuejs routing with dialogs
  - vuejs full screen signin and signup forms using dialogs
  - protected private image routes
+ - dynamic image resizing
  - watermarked images
  - image caching of automatically resized or watermarked images server side
  - image cache clearing functionality
