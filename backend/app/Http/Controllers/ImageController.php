@@ -18,10 +18,7 @@ class ImageController extends Controller
             'source' => Storage::disk('private')->getDriver(),
             'cache' => Storage::disk('cache')->getDriver(),
             'cache_path_prefix' => '.c',
-            // 'base_url' => 'img', ???
         ]);
-        // dd(Storage::disk('private')->path($request->user()->id . '/account/' . $filename));
-        // dd($request->user()->id . '/account/' . $filename);
         return $server->getImageResponse($request->user()->id . '/account/' . $filename, request()->all());
     }
 
