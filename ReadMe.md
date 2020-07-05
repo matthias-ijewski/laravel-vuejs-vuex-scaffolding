@@ -15,7 +15,7 @@ Die erweiterte BearerTokenResponse reichert alle Antworten auf Token-Requests (l
  - vuex modules
  - auth with passport
  - vuejs signin form submit on key enter
- - vuejs routing with dialogs
+ - vuejs named routing with dialogs
  - vuejs full screen signin and signup forms using dialogs
  - protected private image routes
  - dynamic image resizing
