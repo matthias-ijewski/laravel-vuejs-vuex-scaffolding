@@ -14,16 +14,16 @@ Die erweiterte BearerTokenResponse reichert alle Antworten auf Token-Requests (l
 ## Features
  - vuex modules
  - auth with passport
- - signin form submit on enter
+ - vuejs signin form submit on enter
  - vuejs routing with dialogs
- - full screen signin and signup forms unsing dialogs
+ - vuejs full screen signin and signup forms unsing dialogs
  - protected private image routes
  - the php league glide
  - image caching of automatically resized images server side
  - image cache clearing functionality
  - database driven job queues
  - server & frontend side validation
- - multilanguage with laravel-translatable
+ - multilanguage support with laravel-translatable
 
 ## Installation
 
