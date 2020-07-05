@@ -19,7 +19,6 @@ Die erweiterte BearerTokenResponse reichert alle Antworten auf Token-Requests (l
  - vuejs full screen signin and signup forms using dialogs
  - protected private image routes
  - watermarked images
- - the php league glide
  - image caching of automatically resized images server side
  - image cache clearing functionality
  - database driven job queues
