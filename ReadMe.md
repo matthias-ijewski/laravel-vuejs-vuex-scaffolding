@@ -23,7 +23,7 @@ Die erweiterte BearerTokenResponse reichert alle Antworten auf Token-Requests (l
  - image caching of automatically resized or watermarked images server side
  - image cache clearing functionality
  - database driven job queues
- - server & frontend side validation
+ - server & frontend sided validation
  - multilanguage support with laravel-translatable
  - vuejs my account page with avatar upload
 
