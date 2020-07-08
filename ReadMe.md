@@ -20,7 +20,7 @@ Die erweiterte BearerTokenResponse reichert alle Antworten auf Token-Requests (l
  - protected private image routes
  - dynamic image resizing
  - watermarked images
- - image caching of automatically resized or watermarked images server side
+ - image caching of dynamically resized or watermarked images server side
  - image cache clearing functionality
  - database driven job queues
  - server & frontend sided validation
