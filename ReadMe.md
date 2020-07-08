@@ -26,6 +26,8 @@ Die erweiterte BearerTokenResponse reichert alle Antworten auf Token-Requests (l
  - server & frontend sided validation
  - multilanguage support with laravel-translatable
  - vuejs my account page with avatar upload
+ - seed database with all countries
+ - usage of laravel api resources
 
 ## Installation
 
