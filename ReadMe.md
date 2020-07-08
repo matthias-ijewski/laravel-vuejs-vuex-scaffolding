@@ -46,7 +46,7 @@ Passport OAuth-Client erzeugen\
 Der OAuth-Client muss in der Datenbank-Tabelle oauth_clients als Passwort-Client registriert sein (password_client = 1)\
 (php artisan passport:install)\
 php artisan passport:keys\
-npm run dev\
+npm run dev
 
 ### Frontend
 
