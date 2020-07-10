@@ -12,7 +12,6 @@ Route::post('auth/refresh', 'Api\AuthController@refreshToken');
 //
 
 Route::group(['middleware' => 'auth:api'], function () {
-    Route::post('details', 'Api\UserController@details');
     Route::group(['prefix' => 'account', 'middleware' => 'auth:api'], function () {
         Route::put('/', 'Api\AccountController@update')->name('api.account.update');
         Route::post('avatar', 'Api\AccountController@uploadAvatar')->name('api.account.avatar.upload');

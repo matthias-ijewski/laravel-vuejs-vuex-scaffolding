@@ -24,15 +24,17 @@ class LoginRequest extends FormRequest
     public function rules()
     {
         return [
-            'username' => 'required|string|email|max:255'
+            'email' => 'required|string|email|max:255',
+            'password' => 'min:6',
         ];
     }
 
     public function messages()
     {
         return [
-            'username.required' => 'Please enter a valid email address.',
-            'username.email' => 'Please enter a valid email address.'
+            'email.required' => 'Please enter a valid email address.',
+            'email.email' => 'Please enter a valid email address.',
+            'password.min' => 'Your password is too short',
         ];
     }
 }

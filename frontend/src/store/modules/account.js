@@ -122,7 +122,7 @@ export default {
                     grant_type: 'password',
                     client_id: process.env.VUE_APP_API_CLIENT_ID,
                     client_secret: process.env.VUE_APP_API_CLIENT_SECRET,
-                    username: user.email,
+                    email: user.email,
                     password: user.password,
                     scope: process.env.VUE_APP_API_CLIENT_SCOPE
                 };

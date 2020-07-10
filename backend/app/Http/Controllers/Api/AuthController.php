@@ -48,22 +48,20 @@ class AuthController extends Controller
      */
     protected function authenticate(LoginRequest $request)
     {
-        $request->request->add([
-            'grant_type' => 'password',
-            'username' => $request->username,
-            'password' => $request->password,
-            'client_id' => $request->client_id,
-            'client_secret' => $request->client_secret,
-            'scope' => ''
-        ]);
         //
         // log in user for web routes
         if (Auth::attempt([
-            'email' => $request->username,
+            'email' => $request->email,
             'password' => $request->password
         ])) {
-            $user = User::where('email', $request->username)->firstOrFail();
+            $user = User::where('email', $request->email)->firstOrFail();
             Auth::login($user);
+            //
+            // passport expects username to be set
+            request()->merge([
+                'username' => $request->email
+            ]);
+            //
             $proxy = Request::create(
                 'oauth/token',
                 'POST'

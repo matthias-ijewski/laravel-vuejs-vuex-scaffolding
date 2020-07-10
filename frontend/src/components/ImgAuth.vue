@@ -2,7 +2,6 @@
     <img :src="base64" />
 </template>
 <script>
-// import axios from 'axios';
 export default {
     props: ['src', 'w', 'h'],
     data() {

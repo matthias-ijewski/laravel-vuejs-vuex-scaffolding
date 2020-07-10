@@ -60,7 +60,6 @@
 
 <script>
 import ImageInput from '@/components/ImageInput.vue';
-// import ImgAuth from '@/components/ImgAuth.vue';
 import { required, minLength, email } from 'vuelidate/lib/validators';
 
 export default {
