@@ -8,7 +8,7 @@ Route::group(['prefix' => 'user', 'middleware' => 'auth:api'], function () {
 // routes for unauthorized access
 Route::post('auth/register', 'Api\AuthController@register');
 Route::post('auth/token', 'Api\AuthController@authenticate');
-Route::post('auth/refresh', 'Api\AuthController@refreshToken');
+// Route::post('auth/refresh', 'Api\AuthController@refreshToken'); // @todo implement
 //
 
 Route::group(['middleware' => 'auth:api'], function () {

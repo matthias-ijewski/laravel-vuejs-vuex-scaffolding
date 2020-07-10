@@ -5,7 +5,6 @@ namespace App\Http\Controllers\Api;
 use App\Http\Controllers\Controller;
 use App\Http\Requests\LoginRequest;
 use App\Http\Requests\RegisterRequest;
-use App\Http\Resources\UserResource;
 use App\User;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
@@ -13,8 +12,6 @@ use Illuminate\Support\Facades\Route;
 
 class AuthController extends Controller
 {
-    private $client;
-
 
     function register(RegisterRequest $request)
     {
@@ -71,21 +68,21 @@ class AuthController extends Controller
      * @param Request $request
      * @return mixed
      */
-    protected function refreshToken(Request $request)
-    {
-        $request->request->add([
-            'grant_type' => 'refresh_token',
-            'refresh_token' => $request->refresh_token,
-            'client_id' => $this->client->id,
-            'client_secret' => $this->client->secret,
-            'scope' => ''
-        ]);
+    // protected function refreshToken(Request $request)
+    // {
+    //     $request->request->add([
+    //         'grant_type' => 'refresh_token',
+    //         'refresh_token' => $request->refresh_token,
+    //         'client_id' => $this->client->id,
+    //         'client_secret' => $this->client->secret,
+    //         'scope' => ''
+    //     ]);
 
-        $proxy = Request::create(
-            'oauth/token',
-            'POST'
-        );
+    //     $proxy = Request::create(
+    //         'oauth/token',
+    //         'POST'
+    //     );
 
-        return \Route::dispatch($proxy);
-    }
+    //     return \Route::dispatch($proxy);
+    // }
 }
