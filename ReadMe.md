@@ -15,17 +15,19 @@ Die erweiterte BearerTokenResponse reichert alle Antworten auf Token-Requests (l
  - vuex modules
  - auth with passport
  - vuejs signin form submit on key enter
- - vuejs routing with dialogs
+ - vuejs named routing with dialogs
  - vuejs full screen signin and signup forms using dialogs
  - protected private image routes
  - dynamic image resizing
  - watermarked images
- - image caching of automatically resized or watermarked images server side
+ - image caching of dynamically resized or watermarked images server side
  - image cache clearing functionality
  - database driven job queues
  - server & frontend sided validation
  - multilanguage support with laravel-translatable
  - vuejs my account page with avatar upload
+ - seed database with all countries
+ - usage of laravel api resources
 
 ## Installation
 
@@ -44,7 +46,7 @@ Passport OAuth-Client erzeugen\
 Der OAuth-Client muss in der Datenbank-Tabelle oauth_clients als Passwort-Client registriert sein (password_client = 1)\
 (php artisan passport:install)\
 php artisan passport:keys\
-npm run dev\
+npm run dev
 
 ### Frontend
 
