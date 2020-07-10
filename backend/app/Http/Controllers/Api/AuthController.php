@@ -25,16 +25,12 @@ class AuthController extends Controller
             'email' => $request->get('email'),
             'password' => bcrypt($request->get('password'))
         ]);
-
-        $request->merge([
-            'grant_type'    => 'password',
-            'client_id'     => $request->get('client_id'),
-            'client_secret' => $request->get('client_secret'),
-            'username'      => $request->get('email'),
-            'password'      => $request->get('password'),
-            'scope'         => '',
+        //
+        // passport expects username to be set
+        request()->merge([
+            'username' => $request->get('email'),
         ]);
-
+        //
         $token = Request::create(
             'oauth/token',
             'POST'
@@ -51,15 +47,15 @@ class AuthController extends Controller
         //
         // log in user for web routes
         if (Auth::attempt([
-            'email' => $request->email,
-            'password' => $request->password
+            'email' => $request->get('email'),
+            'password' => $request->get('password'),
         ])) {
-            $user = User::where('email', $request->email)->firstOrFail();
+            $user = User::where('email', $request->get('email'))->firstOrFail();
             Auth::login($user);
             //
             // passport expects username to be set
             request()->merge([
-                'username' => $request->email
+                'username' => $request->get('email'),
             ]);
             //
             $proxy = Request::create(
